@@ -1,0 +1,1 @@
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\AppConference.csproj;x64

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppConference.MainPage"
+             BackgroundColor="#AFBEA8"
+             Shell.NavBarIsVisible="False"
+             >
+
+    <Grid>
+        
+        <Ellipse Fill="#84AE62"
+                 WidthRequest="500"
+                 HeightRequest="500"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Start"
+                 Opacity="0.5"
+                 Margin="0, -80, 0, 0"/>
+
+        <Image Source="people_640.png"
+               Aspect="AspectFill"
+               WidthRequest="400"
+               HeightRequest="400"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" 
+               Margin="0, -30,0,0"/>
+
+        <Label Text="Bienvenue"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               FontSize="30"          
+               Margin="0,0,0,250" />
+
+        <Label Text="Sur mon appli"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               FontSize="25"          
+               Margin="0,0,0,200"
+               />
+
+        <Button Text="Suivant"
+                Clicked="OnCommencerClicked"
+                BackgroundColor="#33B1C3"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Margin="0,0,0,50" 
+                Padding="80,15,80,15"
+                CornerRadius="50"
+                />
+
+    </Grid>
+
+</ContentPage>

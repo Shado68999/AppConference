@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppConference.views.SignUpPage"
+             Title="SignUpPage"
+             BackgroundColor="#AFBEA8"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout>
+        <Ellipse
+            Fill="#5C6F57"
+            WidthRequest="303"
+            HeightRequest="296"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Margin="-30,-60,0,0"
+            />
+
+        <Ellipse
+            Fill="#E1DD76"
+            WidthRequest="245"
+            HeightRequest="162"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Margin="150,-290,0,0"
+            />
+
+        <Label
+            Text="Inscription"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            FontSize="25"
+            TextColor="Aqua"
+            Margin="40,-30,0,0"
+            />
+
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="12,150,0,0" Padding="8,0,0,0">
+
+            <Entry x:Name="fullNameEntry" Placeholder="Nom / Prenom" PlaceholderColor="Black" Keyboard="Text" WidthRequest="330" HeightRequest="72"/>
+
+
+            <Image
+                   Source="icons8_person_48.png"
+                    HeightRequest="32"
+                    WidthRequest="32"
+                   HorizontalOptions="EndAndExpand"
+                   Aspect="AspectFill"
+                   Margin="00,0,50,0"
+                />
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="12,5,0,0" Padding="8,0,0,0">
+
+            <Entry x:Name="emailEntry" Placeholder="Entrez votre adresse e-mail" PlaceholderColor="Black" Keyboard="Email" WidthRequest="330" HeightRequest="72"/>
+
+
+            <Image
+                    Source="icons8_email_48.png"
+                    HeightRequest="32"
+                    WidthRequest="32"
+                    HorizontalOptions="EndAndExpand"
+                    Aspect="AspectFill"
+                    Margin="0,0,50,0"
+                />
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="12,5,0,0" Padding="8,0,0,0">
+
+            <Entry x:Name="passwordEntry" Placeholder="Entrez votre mot de passe" PlaceholderColor="Black" IsPassword="True"  WidthRequest="330" HeightRequest="72"/>
+
+
+            <Image
+                   Source="icons8_key_32.png"
+                    HeightRequest="32"
+                    WidthRequest="32"
+                   HorizontalOptions="EndAndExpand"
+                   Aspect="AspectFill"
+                   Margin="00,0,50,0"
+                />
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="12,5,0,0" Padding="8,0,0,0">
+
+            <Entry x:Name="confirmPasswordEntry" Placeholder="Confirmer votre mot de passe" PlaceholderColor="Black" IsPassword="True" WidthRequest="330" HeightRequest="72"/>
+
+
+            <Image
+                    Source="icons8_password_48.png"
+                    HeightRequest="32"
+                    WidthRequest="32"
+                    HorizontalOptions="EndAndExpand"
+                    Aspect="AspectFill"
+                    Margin="0,0,50,0"
+                />
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="12,5,0,0" Padding="8,0,0,0">
+
+            <Entry x:Name="roleEntry" Placeholder="Entrez votre Rôle" PlaceholderColor="Black" WidthRequest="330" HeightRequest="72"/>
+
+
+            <Image
+                    Source="icons8_comedy_32.png"
+                    HeightRequest="32"
+                    WidthRequest="32"
+                    HorizontalOptions="EndAndExpand"
+                    Aspect="AspectFill"
+                    Margin="0,0,50,0"
+                />
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="12,5,0,0" Padding="8,0,0,0">
+
+            <Entry x:Name="originEntry" Placeholder="Votre Provenance" PlaceholderColor="Black" WidthRequest="330" HeightRequest="72"/>
+
+
+            <Image
+                    Source="icons8_comedy_32.png"
+                    HeightRequest="32"
+                    WidthRequest="32"
+                    HorizontalOptions="EndAndExpand"
+                    Aspect="AspectFill"
+                    Margin="0,0,50,0"
+                />
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="0,30,0,0">
+            <Button
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Text="S'inscrire"
+                TextColor="Yellow"
+                BackgroundColor="#33B1C3"
+                FontAttributes="Bold"
+                FontSize="22"
+                Margin="30,29,0,0"
+                Clicked="OnHomeClicked"
+                CornerRadius="50"
+                />
+
+            <Button
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Text="Se Connecter"
+                CornerRadius="50"
+                TextColor="Yellow"
+                Clicked="OnLogInClicked"
+                BackgroundColor="Transparent"
+                FontAttributes="Bold"
+                FontSize="22"
+                Margin="20,29,0,0"
+                />
+        </StackLayout>
+        
+    </VerticalStackLayout>
+</ContentPage>

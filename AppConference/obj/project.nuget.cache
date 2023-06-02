@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "uNL8wuSVwPPZh/+fMLQdi7M7b49EpKMOMOBnuQfvTWk+KQOBLGx1pYpVVf/GQUVCGMvJ1yHlx+oxB4PHtqFf/g==",
+  "success": false,
+  "projectFilePath": "/media/Basic data partition\" PARTUUID=\"d48c2915-061a-43da-8449-44ed14876717\"/Users/USER/Documents/exercice c#/AppConference/AppConference/AppConference.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "filePath": "/mnt/sda4/Users/USER/Documents/exercice c#/AppConference/AppConference/AppConference.csproj",
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net7.0-android, net7.0-ios, net7.0-maccatalyst"
+    }
+  ]
+}
