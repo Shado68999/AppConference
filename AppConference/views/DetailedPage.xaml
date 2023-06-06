@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppConference.views.DetailedPage"
+             Title="DetailedPage">
+    <ScrollView>
+        <VerticalStackLayout >
+            <Frame
+            Margin="20"
+            HeightRequest="500"
+            BorderColor="Green">
+                <Label 
+            Text="Une conférence peut être co-présidée par un groupe d’organisateurs 
+                    2. Une conférence fait l’objet d’une ou plusieurs articles (Si à 2 (deux) semaines de la 
+                    date de début aucun article n’est affecté à la conférence elle soit être reportée ou 
+                    annulée). 
+                    3. Un article concerne une et une seule conférence 
+                    4. Un article peut être soumis à 2 ou 3 relecteurs 
+                    5. Un relecteur peut être affecté à plusieurs articles "
+                FontSize="18"
+            VerticalOptions="StartAndExpand" 
+            HorizontalOptions="Center" 
+               />
+            </Frame>
+
+            <Grid ColumnDefinitions="*,*" Padding="10" Margin="10">
+                <Button
+                Text="S'inscrire"
+                Grid.Column="0"
+                BackgroundColor="Green"
+                Margin="10"
+                CornerRadius="22"
+                FontSize="18"
+                FontAttributes="Bold"></Button>
+                <Button
+                Text="+ Article"
+                FontAttributes="Bold"
+                FontSize="18"
+                Grid.Column="1"
+                BackgroundColor="#ff0d00"
+                Margin="10"
+                CornerRadius="22"
+                   />
+            </Grid>
+        </VerticalStackLayout>
+
+    </ScrollView>
+</ContentPage>

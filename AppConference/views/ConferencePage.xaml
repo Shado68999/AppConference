@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppConference.views.ConferencePage"
+             xmlns:Material="clr-namespace:AppConference.Material"
+             Title="Conférence">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ajouter"  Command="{Binding AddCommand}" IconImageSource="create_document.png" />
+        <ToolbarItem Text="Rafraichir"  Command="{Binding RefreshCommand}" IconImageSource="refresh.png"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+
+        <ScrollView x:Name="scrollView"
+                    VerticalOptions="FillAndExpand"
+                    Scrolled="OnScrollViewScrolled">
+            <StackLayout Spacing="10" Margin="10">
+                <!-- Cards -->
+                <Frame Margin="10"
+               BorderColor="Green"
+               HeightRequest="180">
+                    <StackLayout
+                Spacing="8">
+                        <Label Text="Titre de la conférence"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                        <BoxView HeightRequest="2"
+                         BackgroundColor="DarkGreen"
+                         HorizontalOptions="Fill"
+                         Margin="0"
+                         WidthRequest="400"/>
+                        <Label Text="Theme de la Conférence"
+                       FontSize="Default"
+                       FontAttributes="Bold"/>
+                        <Label Text="Sigle de la conférence"/>
+                        <Button BackgroundColor="Green"
+                        HeightRequest="35"
+                        WidthRequest="100"
+                        Text="Voir plus..."
+                        FontAttributes="Italic,Bold"
+                        FontSize="Small"
+                        HorizontalOptions="End"
+                        Clicked="DelaitedClick"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10"
+               BorderColor="Green"
+               HeightRequest="180">
+                    <StackLayout
+                Spacing="8">
+                        <Label Text="Titre de la conférence"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                        <BoxView HeightRequest="2"
+                         BackgroundColor="DarkGreen"
+                         HorizontalOptions="Fill"
+                         Margin="0"
+                         WidthRequest="400"/>
+                        <Label Text="Theme de la Conférence"
+                       FontSize="Default"
+                       FontAttributes="Bold"/>
+                        <Label Text="Sigle de la conférence"/>
+                        <Button BackgroundColor="Green"
+                        HeightRequest="35"
+                        WidthRequest="100"
+                        Text="Voir plus..."
+                        FontAttributes="Italic,Bold"
+                        FontSize="Small"
+                        HorizontalOptions="End"
+                        Clicked="DelaitedClick"/>
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame Margin="10"
+               BorderColor="Green"
+               HeightRequest="180">
+                    <StackLayout
+                Spacing="8">
+                        <Label Text="Titre de la conférence"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                        <BoxView HeightRequest="2"
+                         BackgroundColor="DarkGreen"
+                         HorizontalOptions="Fill"
+                         Margin="0"
+                         WidthRequest="400"/>
+                        <Label Text="Theme de la Conférence"
+                       FontSize="Default"
+                       FontAttributes="Bold"/>
+                        <Label Text="Sigle de la conférence"/>
+                        <Button BackgroundColor="Green"
+                        HeightRequest="35"
+                        WidthRequest="100"
+                        Text="Voir plus..."
+                        FontAttributes="Italic,Bold"
+                        FontSize="Small"
+                        HorizontalOptions="End"
+                        Clicked="DelaitedClick"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10"
+               BorderColor="Green"
+               HeightRequest="200">
+                    <StackLayout
+                Spacing="8">
+                        <Label Text="Titre de la conférence"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+                        <BoxView HeightRequest="2"
+                         BackgroundColor="DarkGreen"
+                         HorizontalOptions="Fill"
+                         Margin="0"
+                         WidthRequest="400"/>
+                        <Label Text="Theme de la Conférence"
+                       FontSize="Default"
+                       FontAttributes="Bold"/>
+                        <Label Text="Sigle de la conférence"/>
+                        <Button BackgroundColor="Green"
+                        HeightRequest="35"
+                        WidthRequest="100"
+                        Text="Voir"
+                        FontAttributes="Italic,Bold"
+                        FontSize="Small"
+                        HorizontalOptions="End"
+                        Clicked="DelaitedClick"/>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

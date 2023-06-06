@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppConference.views.HomePage"
+             Title="Accueil"
+             BackgroundColor="Cornsilk"
+             Shell.BackgroundColor="Wheat">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Frame>
+                <Grid RowDefinitions="*,Auto,*"
+                      RowSpacing="10"
+                      Padding="20">
+
+                    <Label Text="Origin Conference"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                       Grid.Row="0"/>
+                    <Grid ColumnDefinitions="*,*"
+                      RowDefinitions="*,*"
+                      Grid.Row="1">
+                        <Label Text="La communauté scientifique est un réseau d'esprits brillants et curieux, dédiés à la quête du savoir et à la découverte de nouvelles vérités. Réunissant des chercheurs, des universitaires et des passionnés, cette communauté dynamique repousse sans cesse les frontières de la connaissance, explorant les mystères de l'univers, de la vie et de la technologie. Guidée par la rigueur intellectuelle, la méthode scientifique et la collaboration, elle vise à résoudre les problèmes les plus complexes de notre temps, à développer des innovations révolutionnaires et à apporter des réponses éclairées aux défis auxquels l'humanité est confrontée. La communauté scientifique incarne l'esprit de curiosité, de persévérance et de partage, ouvrant la voie à un avenir plus éclairé et progressiste pour tous."
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               Grid.Column="0"
+                               Margin="0,40,0,0"
+                               Grid.Row="0"/>
+                        <Image Source="dotnet_bot.svg"
+                           Grid.Column="1"
+                               Margin="0,40,0,0"
+                           Grid.Row="0"/>
+                        <Image Source="dotnet_bot.svg"
+                           Grid.Column="0"
+                           Margin="0,40,0,0"
+                           Grid.Row="1"/>
+                        <Label Text="La communauté scientifique est un réseau d'esprits brillants et curieux, dédiés à la quête du savoir et à la découverte de nouvelles vérités. Réunissant des chercheurs, des universitaires et des passionnés, cette communauté dynamique repousse sans cesse les frontières de la connaissance, explorant les mystères de l'univers, de la vie et de la technologie. Guidée par la rigueur intellectuelle, la méthode scientifique et la collaboration, elle vise à résoudre les problèmes les plus complexes de notre temps, à développer des innovations révolutionnaires et à apporter des réponses éclairées aux défis auxquels l'humanité est confrontée. La communauté scientifique incarne l'esprit de curiosité, de persévérance et de partage, ouvrant la voie à un avenir plus éclairé et progressiste pour tous."
+                           FontSize="13"
+                           Margin="0,40,0,0"
+                           FontAttributes="Bold"
+                           Grid.Column="1"
+                           Grid.Row="1"/>
+
+                    </Grid>
+                    <Button Text="Intégrer la communauté"
+                            Margin="20"
+                            FontSize="18"
+                            Grid.Row="2"
+                            FontAttributes="Bold"
+                            HeightRequest="55"
+                            
+                            BackgroundColor="DarkOliveGreen"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>
