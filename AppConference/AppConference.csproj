@@ -49,15 +49,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\angels.png" />
+	  <None Remove="Resources\Images\conference.svg" />
+	  <None Remove="Resources\Images\create_document.png" />
+	  <None Remove="Resources\Images\house.svg" />
 	  <None Remove="Resources\Images\icons8_comedy_32.png" />
 	  <None Remove="Resources\Images\icons8_email_48.png" />
-	  <None Remove="Resources\Images\icons8_github_96.png" />
-	  <None Remove="Resources\Images\icons8_google_96.png" />
 	  <None Remove="Resources\Images\icons8_key_32.png" />
 	  <None Remove="Resources\Images\icons8_login_96.png" />
 	  <None Remove="Resources\Images\icons8_password_48.png" />
 	  <None Remove="Resources\Images\icons8_person_48.png" />
+	  <None Remove="Resources\Images\menu.svg" />
+	  <None Remove="Resources\Images\newspaper.svg" />
 	  <None Remove="Resources\Images\people_640.png" />
+	  <None Remove="Resources\Images\refresh.png" />
+	  <None Remove="Resources\Images\scroll.svg" />
+	  <None Remove="Resources\Images\sliders.svg" />
+	  <None Remove="Resources\Images\users.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -65,13 +73,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="HomePage.xaml">
+	  <MauiXaml Update="views\ArticlePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="views\LoginPage.xaml">
+	  <MauiXaml Update="views\ConferencePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="views\SignUpPage.xaml">
+	  <MauiXaml Update="views\DetailedPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\Label\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\Label\Registration.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\Label\SignUpPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\SlidePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\UserPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

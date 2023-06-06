@@ -41,3 +41,12 @@ C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0
 C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\AppConference.AssemblyInfoInputs.cache
 C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\AppConference.AssemblyInfo.cs
 C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\AppConference.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8_comedy_32.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8_email_48.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8_github_96.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8_google_96.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8_key_32.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8_login_96.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8_password_48.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\icons8_person_48.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\Resources\people_640.png

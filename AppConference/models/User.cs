@@ -9,6 +9,8 @@ namespace AppConference.models
 {
     class User
     {
+        [JsonPropertyName("id")]
+        public int id { get; set; }
         [JsonPropertyName("name")]
         private string name { get; set; }
         [JsonPropertyName("email")]
@@ -33,6 +35,12 @@ namespace AppConference.models
             this.confirmPass = confirmPass;
             this.role = role;
             this.origin = origin;
+        }
+
+        public User(string email, string password)
+        {
+            this.email = email;
+            this.password = password;
         }
 
        public User( Conference conference, List<Article> articles)

@@ -26,12 +26,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppConference.AppShell.xam
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/HomePage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = AppConference.HomePage.xaml
-build_metadata.AdditionalFiles.TargetPath = HomePage.xaml
-build_metadata.AdditionalFiles.RelativePath = HomePage.xaml
-
 [C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppConference.MainPage.xaml
@@ -50,14 +44,56 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppConference.Resources.St
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/LoginPage.xaml]
+[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/ArticlePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.LoginPage.xaml
-build_metadata.AdditionalFiles.TargetPath = views\LoginPage.xaml
-build_metadata.AdditionalFiles.RelativePath = views\LoginPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.ArticlePage.xaml
+build_metadata.AdditionalFiles.TargetPath = views\ArticlePage.xaml
+build_metadata.AdditionalFiles.RelativePath = views\ArticlePage.xaml
 
-[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/SignUpPage.xaml]
+[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/ConferencePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.SignUpPage.xaml
-build_metadata.AdditionalFiles.TargetPath = views\SignUpPage.xaml
-build_metadata.AdditionalFiles.RelativePath = views\SignUpPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.ConferencePage.xaml
+build_metadata.AdditionalFiles.TargetPath = views\ConferencePage.xaml
+build_metadata.AdditionalFiles.RelativePath = views\ConferencePage.xaml
+
+[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/DetailedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.DetailedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = views\DetailedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = views\DetailedPage.xaml
+
+[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = views\HomePage.xaml
+
+[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/Label/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.Label.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = views\Label\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = views\Label\LoginPage.xaml
+
+[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/Label/Registration.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.Label.Registration.xaml
+build_metadata.AdditionalFiles.TargetPath = views\Label\Registration.xaml
+build_metadata.AdditionalFiles.RelativePath = views\Label\Registration.xaml
+
+[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/Label/SignUpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.Label.SignUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = views\Label\SignUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = views\Label\SignUpPage.xaml
+
+[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/SlidePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.SlidePage.xaml
+build_metadata.AdditionalFiles.TargetPath = views\SlidePage.xaml
+build_metadata.AdditionalFiles.RelativePath = views\SlidePage.xaml
+
+[C:/Users/USER/Documents/exercice c\#/AppConference/AppConference/views/UserPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppConference.views.UserPage.xaml
+build_metadata.AdditionalFiles.TargetPath = views\UserPage.xaml
+build_metadata.AdditionalFiles.RelativePath = views\UserPage.xaml

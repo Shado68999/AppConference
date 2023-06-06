@@ -6,6 +6,13 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 using System.Threading.Tasks;
+using AppConference.models;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+
+
+
 
 namespace AppConference.Services
 {
@@ -40,67 +47,117 @@ namespace AppConference.Services
             }
         }
 
-        public async Task<List<T>> Get<T>(string endpoint)
+        public static async Task<User> Login(User user)
         {
-            var response = await apiClient.GetAsync(endpoint);
+            var url = $"{BaseUrl}/User/login";
+
+            var jsonContent = JsonSerializer.Serialize(user, _serializerOptions);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await apiClient.PostAsync(url, httpContent);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
-                var result = JsonSerializer.Deserialize<List<T>>(content, _serializerOptions);
-                return result;
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var loggedInUser = JsonSerializer.Deserialize<User>(responseContent, _serializerOptions);
+                return loggedInUser;
             }
             else
             {
-                // Gérer les erreurs de l'appel API
-                throw new Exception($"Error retrieving data. StatusCode: {response.StatusCode}");
+                return null;
             }
         }
 
-        public async Task<T> Post<T>(string endpoint, T data)
+        public static async Task<User> CreateUser(User user)
         {
-            var json = JsonSerializer.Serialize(data, _serializerOptions);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var url = $"{BaseUrl}/User/create";
 
-            var response = await apiClient.PostAsync(endpoint, content);
+            using (var httpClient = new HttpClient())
+            {
+                var jsonContent = JsonSerializer.Serialize(user, _serializerOptions);
+                var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                var response = await httpClient.PostAsync(url, httpContent);
+                Debug.WriteLine("code",response);
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    var createdUser = JsonSerializer.Deserialize<User>(responseContent, _serializerOptions);
+                    return createdUser;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+        public static async Task<List<User>> ReadUsers()
+        {
+            var url = $"{BaseUrl}/User/read";
+
+            var response = await apiClient.GetAsync(url);
             if (response.IsSuccessStatusCode)
             {
-                var result = await response.Content.ReadAsStringAsync();
-                var createdData = JsonSerializer.Deserialize<T>(result, _serializerOptions);
-                return createdData;
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var users = JsonSerializer.Deserialize<List<User>>(responseContent, _serializerOptions);
+                return users;
             }
             else
             {
-                // Gérer les erreurs de l'appel API
-                throw new Exception($"Error creating data. StatusCode: {response.StatusCode}");
+                return null;
             }
         }
 
-        public async Task<T> Put<T>(string endpoint, T data)
+        public static async Task<User> GetUserById(long id)
         {
-            var json = JsonSerializer.Serialize(data, _serializerOptions);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var url = $"{BaseUrl}/User/get/{id}";
 
-            var response = await apiClient.PutAsync(endpoint, content);
+            var response = await apiClient.GetAsync(url);
             if (response.IsSuccessStatusCode)
             {
-                var result = await response.Content.ReadAsStringAsync();
-                var updatedData = JsonSerializer.Deserialize<T>(result, _serializerOptions);
-                return updatedData;
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var user = JsonSerializer.Deserialize<User>(responseContent, _serializerOptions);
+                return user;
             }
             else
             {
-                // Gérer les erreurs de l'appel API
-                throw new Exception($"Error updating data. StatusCode: {response.StatusCode}");
+                return null;
             }
         }
 
-        public async Task Delete(string endpoint)
+        public static async Task<User> UpdateUser(long id, User user)
         {
-            var response = await apiClient.DeleteAsync(endpoint);
-            if (!response.IsSuccessStatusCode)
+            var url = $"{BaseUrl}/User/update/{id}";
+
+            var jsonContent = JsonSerializer.Serialize(user, _serializerOptions);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await apiClient.PutAsync(url, httpContent);
+            if (response.IsSuccessStatusCode)
             {
-                // Gérer les erreurs de l'appel API
-                throw new Exception($"Error deleting data. StatusCode: {response.StatusCode}");
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var updatedUser = JsonSerializer.Deserialize<User>(responseContent, _serializerOptions);
+                return updatedUser;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static async Task<string> DeleteUser(long id)
+        {
+            var url = $"{BaseUrl}/User/delete/{id}";
+
+            var response = await apiClient.DeleteAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                return "Utilisateur supprimé avec succès !";
+            }
+            else
+            {
+                return "Une erreur s'est produite lors de la suppression de l'utilisateur.";
             }
         }
     }

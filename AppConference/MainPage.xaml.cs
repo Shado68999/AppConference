@@ -13,7 +13,7 @@ public partial class MainPage : ContentPage
 
 	private async void OnCommencerClicked(object sender, EventArgs e)
 	{
-        await Navigation.PushAsync(page: new LoginPage());
+        await Navigation.PushAsync(page: new HomePage());
     }
 }
 

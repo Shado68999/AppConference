@@ -862,6 +862,21 @@
     <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\conference.scale-100.png">
+      <PackagePath>conference.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\conference.scale-125.png">
+      <PackagePath>conference.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\conference.scale-150.png">
+      <PackagePath>conference.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\conference.scale-200.png">
+      <PackagePath>conference.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\conference.scale-400.png">
+      <PackagePath>conference.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -876,6 +891,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\house.scale-100.png">
+      <PackagePath>house.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\house.scale-125.png">
+      <PackagePath>house.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\house.scale-150.png">
+      <PackagePath>house.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\house.scale-200.png">
+      <PackagePath>house.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\house.scale-400.png">
+      <PackagePath>house.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8_comedy_32.scale-100.png">
       <PackagePath>icons8_comedy_32.scale-100.png</PackagePath>
@@ -901,8 +931,53 @@
     <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8_person_48.scale-100.png">
       <PackagePath>icons8_person_48.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\newspaper.scale-100.png">
+      <PackagePath>newspaper.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\newspaper.scale-125.png">
+      <PackagePath>newspaper.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\newspaper.scale-150.png">
+      <PackagePath>newspaper.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\newspaper.scale-200.png">
+      <PackagePath>newspaper.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\newspaper.scale-400.png">
+      <PackagePath>newspaper.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\people_640.scale-100.png">
       <PackagePath>people_640.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\scroll.scale-100.png">
+      <PackagePath>scroll.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\scroll.scale-125.png">
+      <PackagePath>scroll.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\scroll.scale-150.png">
+      <PackagePath>scroll.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\scroll.scale-200.png">
+      <PackagePath>scroll.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\scroll.scale-400.png">
+      <PackagePath>scroll.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\users.scale-100.png">
+      <PackagePath>users.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\users.scale-125.png">
+      <PackagePath>users.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\users.scale-150.png">
+      <PackagePath>users.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\users.scale-200.png">
+      <PackagePath>users.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\users.scale-400.png">
+      <PackagePath>users.scale-400.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

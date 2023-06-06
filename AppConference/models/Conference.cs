@@ -9,6 +9,8 @@ namespace AppConference.models
 {
     class Conference
     {
+        [JsonPropertyName("id")]
+        private int id { get; set; }
         [JsonPropertyName("name")]
         private string name { get; set; }
         [JsonPropertyName("sigle")]

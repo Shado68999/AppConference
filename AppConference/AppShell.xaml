@@ -4,11 +4,48 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AppConference"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:Label="clr-namespace:AppConference.views.Label"
+    xmlns:views="clr-namespace:AppConference.views"
+    Shell.FlyoutBehavior="Disabled"
+    BackgroundColor="DarkBlue">
 
-    <ShellContent
-        Title="Begin"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
 
+    <TabBar>
+        <Tab 
+            Title="Accueil"
+            Icon="house.png"
+            >
+            <ShellContent
+                ContentTemplate="{DataTemplate views:HomePage}"
+                 Route="home"
+                />
+        </Tab>
+
+        <Tab
+            Title="Conférence"
+            Icon="conference.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate views:ConferencePage}"
+                />
+        </Tab>
+        <Tab
+            Title="Article"
+            Icon="scroll.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate Label:Registration}"
+                />
+        </Tab>
+        <Tab
+            Title="Utilisateur"
+            Icon="users.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate Label:Registration}"/>
+        </Tab>
+        <!--<Tab
+            Title="Tableau de Bord"
+            Icon="sliders.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate Label:Registration}"/>
+        </Tab>-->        
+    </TabBar>
 </Shell>
