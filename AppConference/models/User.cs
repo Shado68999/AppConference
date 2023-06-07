@@ -43,7 +43,7 @@ namespace AppConference.models
             this.password = password;
         }
 
-       public User( Conference conference, List<Article> articles)
+       public User(Conference conference, List<Article> articles)
         {
             this.conference = conference;
             this.articles = articles;

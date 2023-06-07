@@ -6,7 +6,7 @@
              Title="Conférence">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Ajouter"  Command="{Binding AddCommand}" IconImageSource="create_document.png" />
+        <ToolbarItem Text="Ajouter"  Command="{Binding AddCommand}" IconImageSource="create_document.png" Clicked="ExecuteAddConference"/>
         <ToolbarItem Text="Rafraichir"  Command="{Binding RefreshCommand}" IconImageSource="refresh.png"/>
     </ContentPage.ToolbarItems>
     <StackLayout>
@@ -16,7 +16,8 @@
                     Scrolled="OnScrollViewScrolled">
             <StackLayout Spacing="10" Margin="10">
                 <!-- Cards -->
-                <Frame Margin="10"
+
+                <!--<Frame Margin="10"
                BorderColor="Green"
                HeightRequest="180">
                     <StackLayout
@@ -98,31 +99,25 @@
                         HorizontalOptions="End"
                         Clicked="DelaitedClick"/>
                     </StackLayout>
-                </Frame>
-                <Frame Margin="10"
-               BorderColor="Green"
-               HeightRequest="200">
-                    <StackLayout
-                Spacing="8">
-                        <Label Text="Titre de la conférence"
-                       FontSize="Title"
-                       FontAttributes="Bold"/>
+                </Frame>-->
+                
+                <Frame Margin="10" BorderColor="#fc466b" HeightRequest="200">
+                    <StackLayout Spacing="5">
+                        <Label Text="Titre de la conférence" FontSize="Title" FontAttributes="Bold"/>
                         <BoxView HeightRequest="2"
-                         BackgroundColor="DarkGreen"
+                         BackgroundColor="#22c1c3"
                          HorizontalOptions="Fill"
                          Margin="0"
                          WidthRequest="400"/>
-                        <Label Text="Theme de la Conférence"
-                       FontSize="Default"
-                       FontAttributes="Bold"/>
-                        <Label Text="Sigle de la conférence"/>
-                        <Button BackgroundColor="Green"
-                        HeightRequest="35"
-                        WidthRequest="100"
+                        <Label Text="Theme de la Conférence" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="Sigle de la conférence" Margin="0,0,0,8"/>
+                        <Button BackgroundColor="#fdbb2d"
+                        HeightRequest="45"
+                        WidthRequest="100"                               
                         Text="Voir"
                         FontAttributes="Italic,Bold"
                         FontSize="Small"
-                        HorizontalOptions="End"
+                        HorizontalOptions="CenterAndExpand"
                         Clicked="DelaitedClick"/>
                     </StackLayout>
                 </Frame>

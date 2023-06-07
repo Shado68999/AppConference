@@ -20,12 +20,19 @@ namespace AppConference.models
         [JsonPropertyName("idUser")]
         private User user { get; set; }
 
-        Article(string title, string content, string file, User user) 
+       public Article(string title, string content, string file, User user) 
         {
             this.title = title;
             this.content = content;
             this.file = file;
             this.user = user;
+        }
+
+       public Article(string title, string content, string file)
+        {
+            this.title = title;
+            this.content = content;
+            this.file = file;            
         }
     }
 }

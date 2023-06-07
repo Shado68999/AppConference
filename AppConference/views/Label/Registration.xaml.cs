@@ -1,5 +1,6 @@
 using AppConference.models;
 using AppConference.Services;
+using System.Diagnostics;
 
 namespace AppConference.views.Label;
 
@@ -41,7 +42,7 @@ public partial class Registration : ContentPage
             if (response != null)
             {
                 await DisplayAlert("Succès", "Votre compte a été créé avec succès.", "OK");
-                await Navigation.PushAsync(new HomePage());
+                await Navigation.PushAsync(new ArticlePage());
             }
             else
             {
@@ -52,6 +53,7 @@ public partial class Registration : ContentPage
         {
 
             await DisplayAlert("Erreur", "Une erreur est survenue lors de l'inscription : " + ex.Message, "OK");
+            Debug.WriteLine("Erreur lors de la création de l'utilisateur : " + ex.Message);
         }
     }
 }

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppConference.views.AddArticle"
+             Title="Ajout d'Article"
+             BackgroundColor="#d5b11c">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame CornerRadius="30" HeightRequest="700" BackgroundColor="#ddce90" Margin="0,12,0,0">
+                <StackLayout Spacing="40">
+
+                    <Frame VerticalOptions="Start" HeightRequest="30" CornerRadius="20" Padding="1" Margin="0,0,0,40" BorderColor="#dada11">
+                        <Label Text="Voulez-vous proposer un article ?" TextColor="#c30d46"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       FontSize="19"
+                       FontAttributes="Bold"/>
+                    </Frame>
+
+                    <Frame Padding="15" BorderColor="#0a99e7" CornerRadius="30" Margin="0,20,0,0" BackgroundColor="#8bcee0">
+                        <Grid ColumnDefinitions="*,Auto">
+                            <!-- <Frame Grid.Column="1" BackgroundColor="#c30d46" CornerRadius="30" Margin="0,50,0,0" HeightRequest="300" WidthRequest="150">
+                                <StackLayout Spacing="10" Margin="0,20" VerticalOptions="EndAndExpand">
+                                    <Frame HeightRequest="100" WidthRequest="100" CornerRadius="100" BackgroundColor="White" Margin="0,0,0,50">
+                                        <ImageButton Source="pdf.png" Clicked="OnFilePickerButtonClicked" WidthRequest="200"/>
+                                    </Frame>
+                                    <Label Text="Télécharger le PDF de l'article" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="Aquamarine"/>
+                                </StackLayout>
+                            </Frame>-->
+                           
+                            <Grid Grid.Column="0" RowSpacing="10" RowDefinitions="*,*,*" HeightRequest="300" Padding="5,20">
+                                <VerticalStackLayout Grid.Row="0"
+                                                 Spacing="5">
+                                    <Label Text="Titre : "
+                                       FontSize="16"
+                                       FontAttributes="Bold"/>
+                                    <Entry Grid.Row="1" x:Name="TitleEntry"/>
+                                </VerticalStackLayout>
+                                <VerticalStackLayout Grid.Row="1"
+                                                 Spacing="5">
+                                    <Label Text="Description : "
+                                       FontSize="16"
+                                       FontAttributes="Bold"/>
+                                    <Entry x:Name="DescriptionEntry"/>
+                                </VerticalStackLayout>
+                                <VerticalStackLayout Grid.Row="2"
+                                                 Spacing="5">
+                                    <Label Text="Fichier : "
+                                       FontSize="16"
+                                       FontAttributes="Bold"/>
+                                    <Entry x:Name="FileEntry"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Grid>
+                    </Frame>
+                    <Button BackgroundColor="#1dd2b7"
+                        VerticalOptions="Start"
+                        Text="Soumettre"
+                        WidthRequest="300"
+                        CornerRadius="30"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        Margin="0,50,0,0"
+                        Clicked="SaveButton_Clicked"    />
+                </StackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

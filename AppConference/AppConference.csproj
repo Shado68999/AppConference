@@ -49,6 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\add.png" />
 	  <None Remove="Resources\Images\angels.png" />
 	  <None Remove="Resources\Images\conference.svg" />
 	  <None Remove="Resources\Images\create_document.png" />
@@ -59,8 +60,10 @@
 	  <None Remove="Resources\Images\icons8_login_96.png" />
 	  <None Remove="Resources\Images\icons8_password_48.png" />
 	  <None Remove="Resources\Images\icons8_person_48.png" />
+	  <None Remove="Resources\Images\icons8_refresh.png" />
 	  <None Remove="Resources\Images\menu.svg" />
 	  <None Remove="Resources\Images\newspaper.svg" />
+	  <None Remove="Resources\Images\pdf.png" />
 	  <None Remove="Resources\Images\people_640.png" />
 	  <None Remove="Resources\Images\refresh.png" />
 	  <None Remove="Resources\Images\scroll.svg" />
@@ -73,6 +76,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="views\AddArticle.xaml.cs">
+	    <DependentUpon>AddArticle.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="views\AddArticle.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\AddConference.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="views\ArticlePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

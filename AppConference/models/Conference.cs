@@ -27,7 +27,7 @@ namespace AppConference.models
         private DateTime dateDeroulement { get; set; }
         private List<User> users { get; set; }
 
-        Conference(string name, string sigle, string theme, DateTime dateSoumission, DateTime dateResultat, DateTime dateInscription, DateTime dateDeroulement, List<User> users) 
+        public Conference(string name, string sigle, string theme, DateTime dateSoumission, DateTime dateResultat, DateTime dateInscription, DateTime dateDeroulement, List<User> users) 
         {
             this.name = name;
             this.sigle = sigle;
@@ -37,6 +37,17 @@ namespace AppConference.models
             this.dateResultat = DateTime.Now;
             this.dateSoumission = DateTime.Now;
             this.users = users;
+        }
+
+        public Conference(string name, string sigle, string theme, DateTime dateSoumission, DateTime dateResultat, DateTime dateInscription, DateTime dateDeroulement) 
+        {
+            this.name = name;
+            this.sigle = sigle;
+            this.theme = theme;
+            this.dateDeroulement = DateTime.Now;
+            this.dateInscription = DateTime.Now;
+            this.dateResultat = DateTime.Now;
+            this.dateSoumission = DateTime.Now;
         }
     }
 }

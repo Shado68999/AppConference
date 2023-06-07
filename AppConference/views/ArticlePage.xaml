@@ -3,5 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppConference.views.ArticlePage"
              Title="Articles">
-   
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ajouter"  Command="{Binding AddCommand}" IconImageSource="add.png" Clicked="ExecuteAddArticle"/>
+        <ToolbarItem Text="Rafraichir"  Command="{Binding RefreshCommand}" IconImageSource="icons8_refresh.png"/>
+    </ContentPage.ToolbarItems>
 </ContentPage>

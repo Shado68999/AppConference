@@ -160,5 +160,149 @@ namespace AppConference.Services
                 return "Une erreur s'est produite lors de la suppression de l'utilisateur.";
             }
         }
+
+        public static async Task<Conference> CreateConference(Conference conference)
+        {
+            var url = $"{BaseUrl}/Conference/create";
+
+            var jsonContent = JsonSerializer.Serialize(conference, _serializerOptions);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await apiClient.PostAsync(url, httpContent);
+            if (response.IsSuccessStatusCode)
+            {
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var createdConference = JsonSerializer.Deserialize<Conference>(responseContent, _serializerOptions);
+                return createdConference;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static async Task<List<Conference>> ReadConferences()
+        {
+            var url = $"{BaseUrl}/Conference/read";
+
+            var response = await apiClient.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var conferences = JsonSerializer.Deserialize<List<Conference>>(responseContent, _serializerOptions);
+                return conferences;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static async Task<Conference> UpdateConference(long id, Conference conference)
+        {
+            var url = $"{BaseUrl}/Conference/update/{id}";
+
+            var jsonContent = JsonSerializer.Serialize(conference, _serializerOptions);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await apiClient.PutAsync(url, httpContent);
+            if (response.IsSuccessStatusCode)
+            {
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var updatedConference = JsonSerializer.Deserialize<Conference>(responseContent, _serializerOptions);
+                return updatedConference;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static async Task<string> DeleteConference(long id)
+        {
+            var url = $"{BaseUrl}/Conference/delete/{id}";
+
+            var response = await apiClient.DeleteAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                return "Conférence supprimée avec succès !";
+            }
+            else
+            {
+                return "Une erreur s'est produite lors de la suppression de la conférence.";
+            }
+        }
+
+        public static async Task<Article> CreateArticle(Article article)
+        {
+            var url = $"{BaseUrl}/Article/create";
+
+            var jsonContent = JsonSerializer.Serialize(article, _serializerOptions);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await apiClient.PostAsync(url, httpContent);
+            if (response.IsSuccessStatusCode)
+            {
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var createdArticle = JsonSerializer.Deserialize<Article>(responseContent, _serializerOptions);
+                return createdArticle;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static async Task<List<Article>> ReadArticles()
+        {
+            var url = $"{BaseUrl}/Article/read";
+
+            var response = await apiClient.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var articles = JsonSerializer.Deserialize<List<Article>>(responseContent, _serializerOptions);
+                return articles;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static async Task<Article> UpdateArticle(long id, Article article)
+        {
+            var url = $"{BaseUrl}/Article/update/{id}";
+
+            var jsonContent = JsonSerializer.Serialize(article, _serializerOptions);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            var response = await apiClient.PutAsync(url, httpContent);
+            if (response.IsSuccessStatusCode)
+            {
+                var responseContent = await response.Content.ReadAsStringAsync();
+                var updatedArticle = JsonSerializer.Deserialize<Article>(responseContent, _serializerOptions);
+                return updatedArticle;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static async Task<string> DeleteArticle(long id)
+        {
+            var url = $"{BaseUrl}/Article/delete/{id}";
+
+            var response = await apiClient.DeleteAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                return "Article supprimé avec succès !";
+            }
+            else
+            {
+                return "Une erreur s'est produite lors de la suppression de l'article.";
+            }
+        }
     }
 }

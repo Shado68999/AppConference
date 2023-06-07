@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppConference.views.AddConference"
+             Title="Ajout de Conference"
+             BackgroundColor="#dcd171">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame CornerRadius="30"
+               HeightRequest="690" Margin="0,20,0,0" BackgroundColor="#ddce90">
+                <StackLayout Spacing="40">
+
+                    <Frame VerticalOptions="Start" HeightRequest="70" CornerRadius="10" Padding="2" Margin="0,0,0,40" BorderColor="#dada11">
+                        <Label Text="Voulez-vous élaborer une conférence ?" TextColor="#c30d46"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       FontSize="19"
+                       Padding="50,0,0,0"
+                       FontAttributes="Bold,Italic"/>
+                    </Frame>
+
+                    <Frame Padding="10" BorderColor="#0cff7d" CornerRadius="20" BackgroundColor="#8bcee0">
+                        <Grid ColumnDefinitions="*,Auto">                            
+                            <Grid Grid.Column="0"
+                              RowSpacing="10"
+                              RowDefinitions="*,*,*"
+                              HeightRequest="300"
+                              Padding="5,20">
+                                <VerticalStackLayout Grid.Row="0" Spacing="5">
+                                    <Label Text="Nom : "
+                                       FontSize="16"
+                                       FontAttributes="Bold"/>
+                                    <Entry Grid.Row="1" x:Name="nomEntry"/>
+                                </VerticalStackLayout>
+                                <VerticalStackLayout Grid.Row="1" Spacing="5">
+                                    <Label Text="Sigle : "
+                                       FontSize="16"
+                                       FontAttributes="Bold"/>
+                                    <Entry x:Name="sigleEntry"/>
+                                </VerticalStackLayout>
+                                <VerticalStackLayout Grid.Row="2" Spacing="5">
+                                    <Label Text="Thème : "
+                                       FontSize="16"
+                                       FontAttributes="Bold"/>
+                                    <Entry x:Name="themeEntry"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Grid>
+                    </Frame>
+
+                    <Button BackgroundColor="#1dd2b7"
+                        VerticalOptions="Start"
+                        Text="Soumettre"
+                        CornerRadius="30"
+                        WidthRequest="300"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        Clicked="SaveConferenceClicked"    
+                        Margin="0,50,0,0"/>
+                </StackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

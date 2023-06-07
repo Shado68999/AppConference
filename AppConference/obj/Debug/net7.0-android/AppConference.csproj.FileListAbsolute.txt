@@ -1018,3 +1018,6 @@ C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0
 C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-android\resizetizer\r\drawable\angels.png
 C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-android\resizetizer\r\drawable\create_document.png
 C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-android\resizetizer\r\drawable\refresh.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-android\resizetizer\r\drawable\add.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-android\resizetizer\r\drawable\icons8_refresh.png
+C:\Users\USER\Documents\exercice c#\AppConference\AppConference\obj\Debug\net7.0-android\resizetizer\r\drawable\pdf.png

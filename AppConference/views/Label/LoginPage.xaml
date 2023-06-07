@@ -109,7 +109,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Ellipse
-                    Fill="#eeaeca"
+                    Fill="#0087b9"
                     WidthRequest="300"
                     HeightRequest="250"
                     HorizontalOptions="Start"
@@ -122,23 +122,16 @@
             <VerticalStackLayout Margin="0,25,0,0">
                 
                 <StackLayout>
-                    <Frame CornerRadius="50" BackgroundColor="#c8e1ff">
-                        <Entry x:Name="emailEntry" Placeholder="Entrez l'E-mail" Margin="{ OnPlatform Android='0.0', iOS='0.10' }" Keyboard="Email"/>
-
+                    <Frame CornerRadius="50" BackgroundColor="#c8e1ff" Padding="20,50,20,50">
+                        <StackLayout Padding="{OnPlatform Android=8, iOS=10, WinUI=70}" Spacing="30">
+                            <Entry x:Name="emailEntry" Placeholder="Entrez l'E-mail" Margin="{ OnPlatform Android='0.0', iOS='0.10' }" Keyboard="Email"/>
+                            <Entry x:Name="passwordEntry" Placeholder="Entrez le mot de passe" Margin="{ OnPlatform Android='0.0', iOS='0.10' }" IsPassword="True"/>
+                        </StackLayout>
                     </Frame>
                 </StackLayout>
-            </VerticalStackLayout>
-            <VerticalStackLayout Margin="0,25,0,0">
-                
-                <StackLayout>
-                    <Frame CornerRadius="50"  BackgroundColor="#c8e1ff">
-                        <Entry x:Name="passwordEntry" Placeholder="Entrez le mot de passe" Margin="{ OnPlatform Android='0.0', iOS='0.10' }" IsPassword="True"/>
-                        
-                    </Frame>                    
-                </StackLayout>
-            </VerticalStackLayout>
+            </VerticalStackLayout>          
 
-            <Button Margin="0,30,0,0" Text="Connecter" CornerRadius="20" BackgroundColor="AntiqueWhite" TextColor="White" Clicked="OnHomeClicked"/>
+            <Button Margin="0,30,0,0" Text="Connecter" CornerRadius="20" BackgroundColor="#3a64c3" TextColor="White" Clicked="OnHomeClicked"/>
 
             <Button Margin="0,15,0,0" BackgroundColor="Transparent" Text="S'inscrire Maintenant" FontSize="14" HorizontalOptions="Center"/>
         </StackLayout>

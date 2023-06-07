@@ -1,5 +1,6 @@
 using AppConference.models;
 using AppConference.Services;
+using System.Diagnostics;
 
 namespace AppConference.views.Label;
 
@@ -56,6 +57,7 @@ public partial class SignUpPage : ContentPage
         {
             
             await DisplayAlert("Erreur", "Une erreur est survenue lors de l'inscription : " + ex.Message, "OK");
+            Debug.WriteLine("Erreur lors de la création de l'utilisateur : " + ex.Message);
         }
 
         

@@ -32,7 +32,7 @@
             Title="Article"
             Icon="scroll.png">
             <ShellContent
-                ContentTemplate="{DataTemplate Label:Registration}"
+                ContentTemplate="{DataTemplate views:AddArticle}"
                 />
         </Tab>
         <Tab
